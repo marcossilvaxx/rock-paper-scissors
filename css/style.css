@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 100%;
+    color: #ffffff;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 15px;
+    height: 130px;
+}
+
+header > img, #score {
+    margin: 0 20px;
+}
+
+header > img {
+    width: 23%;
+}
+
+#score {
+    width: 125px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#score-text {
+    margin-top: 15px;
+    color: hsl(229, 64%, 46%);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+#score-value {
+    color: hsl(229, 16%, 40%);
+    font-size: 3.2em;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+#app{
+    display: flex;
+    width: 46%;
+    height: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url('/images/bg-triangle.svg') center no-repeat;
+    background-size: 40%;
+    background-position-y: 75%;
+}
+
+.hand {
+    width: 50px;
+    height: 50px;
+    background: no-repeat #e7e7e7 center;
+    box-sizing: content-box;
+    padding: 30px;
+    border: 20px solid;
+    border-bottom-width: 17px;
+    border-radius: 50%;
+    margin: 0 30px;
+    cursor: pointer;
+    transition: 0.35s all;
+}
+
+.hand:hover {
+    width: 60px;
+    height: 60px;
+    transition: 0.35s all;
+}
+
+.hand-paper {
+    background-image: url('/images/icon-paper.svg');
+    border-color: hsl(230, 89%, 65%);
+    box-shadow: 0px 8px 0px 0px hsl(230, 85%, 54%), inset 0px 7px 0px 0px #00000021;
+}
+
+.hand-rock{
+    background-image: url('/images/icon-rock.svg');
+    border-color: hsl(349, 71%, 52%);
+    box-shadow: 0px 8px 0px 0px hsl(349, 71%, 41%), inset 0px 7px 0px 0px #00000021;
+    margin-top: 25px;
+}
+
+.hand-scissors{
+    background-image: url('/images/icon-scissors.svg');
+    border-color: hsl(40, 84%, 53%);
+    box-shadow: 0px 8px 0px 0px hsl(40, 84%, 30%), inset 0px 7px 0px 0px #00000021;
+}
+
+#rules {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
