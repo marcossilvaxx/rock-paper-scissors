@@ -70,7 +70,7 @@ header > img {
     height: 50%;
     justify-content: center;
     flex-wrap: wrap;
-    background: url('/images/bg-triangle.svg') center no-repeat;
+    background: url('../images/bg-triangle.svg') center no-repeat;
     background-size: 40%;
     background-position-y: 75%;
 }
@@ -96,20 +96,20 @@ header > img {
 }
 
 .hand-paper {
-    background-image: url('/images/icon-paper.svg');
+    background-image: url('../images/icon-paper.svg');
     border-color: hsl(230, 89%, 65%);
     box-shadow: 0px 8px 0px 0px hsl(230, 85%, 54%), inset 0px 7px 0px 0px #00000021;
 }
 
 .hand-rock{
-    background-image: url('/images/icon-rock.svg');
+    background-image: url('../images/icon-rock.svg');
     border-color: hsl(349, 71%, 52%);
     box-shadow: 0px 8px 0px 0px hsl(349, 71%, 41%), inset 0px 7px 0px 0px #00000021;
     margin-top: 25px;
 }
 
 .hand-scissors{
-    background-image: url('/images/icon-scissors.svg');
+    background-image: url('../images/icon-scissors.svg');
     border-color: hsl(40, 84%, 53%);
     box-shadow: 0px 8px 0px 0px hsl(40, 84%, 30%), inset 0px 7px 0px 0px #00000021;
 }
